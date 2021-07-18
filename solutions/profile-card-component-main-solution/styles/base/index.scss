@@ -1,0 +1,77 @@
+
+body {
+  background-color: var(--color-dark-cyan);
+  font-family: var(--font-k-sans);
+}
+
+div.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > div.profile-card-container {
+    display: grid;
+    border-radius: 16px;
+    width: 360px;
+    overflow: hidden;
+    > img.card-banner-image {
+      width: 100%;
+    }
+    > div.card-content-container {
+      background-color: white;
+      > img.profile-image {
+        border-radius: 50%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        border: 5px solid white;
+        transform: translateY(-50px);
+      }
+      > div.profile-details-container {
+        > span {
+          margin-top: -24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > h3 {
+            color: var(--color-dark-blue);
+            font-weight: 700;
+          }
+          > p {
+            color: var(--color-dark-gray);
+            font-size: 20px;
+            margin-left: 8px;
+          }
+        }
+        > p.location {
+          color: var(--color-dark-gray);
+          margin-top: 18px;
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+      > div.profile-card-footer {
+        margin-top: 24px;
+        border-top: 0.3px solid rgb(214, 214, 214);
+        padding: 2em;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        > div.profile-stats-wrapper {
+          margin-right: auto;
+          margin-left: auto;
+          > h3.profile-stats {
+            color: var(--color-dark-blue);
+            text-align: center;
+          }
+          > p.profile-stats-label {
+            color: var(--color-dark-gray);
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

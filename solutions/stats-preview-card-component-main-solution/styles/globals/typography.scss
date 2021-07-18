@@ -1,0 +1,17 @@
+
+// importing fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');  // inter font
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');   // lexend deca font
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-lex-deca {
+  font-family: var(--font-lexend-deca);
+}

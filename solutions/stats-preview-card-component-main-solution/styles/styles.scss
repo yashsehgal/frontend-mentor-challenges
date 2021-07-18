@@ -1,0 +1,89 @@
+
+@import url('./globals/index.css');
+
+body {
+  background-color: var(--color-very-dark-blue);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1400px;
+}
+
+div.container {
+  > div.card {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15%;
+    background-color: var(--color-des-blue);
+    border-radius: 6px;
+    width: 70%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+  
+    > div.card-content {
+      padding: 2.8em;
+      padding-left: 3.4em;
+
+      > h1 {
+        font-family: var(--font-inter);
+        color: var(--color-white);
+        
+        > span {
+          color: var(--color-soft-violet);
+        }
+      }
+      > div.inner-content {
+        width: 80%;
+        > p {
+          font-family: var(--font-inter);
+          color: var(--color-transparent-white-para);
+        }
+        > div.stats-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          > div.stats {
+            > h3 {
+              font-family: var(--font-lexend-deca);
+              color: var(--color-white);
+            }
+            > p {
+              margin-top: -10px;
+              font-family: var(--font-lexend-deca);
+              color: var(--color-transparent-white-para);
+              font-weight: inherit;
+            }
+          }
+        }
+      }
+    }
+    > div.card-image-container {
+      overflow: hidden;
+      background: url('../assets/image-header-desktop.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      > div.purple-filter {
+        background-color: var(--color-violet-dark);
+        filter: opacity(60%);
+        height: 100%;
+        content: '';
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
+  div.container {
+    > div.card {
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: auto 50%;
+      width: 100%;
+    }
+  }
+}
