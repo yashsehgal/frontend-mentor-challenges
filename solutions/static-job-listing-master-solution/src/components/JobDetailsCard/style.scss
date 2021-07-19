@@ -1,0 +1,199 @@
+div.JobDetailsCard {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 1.8em;
+  display: flex;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 2px 6px 14px hsla(180, 29%, 50%, 0.300);
+  align-items: center;
+  > div.job-description-wrapper {
+    overflow: hidden;
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    > img.company-logo-image {
+      display: block;
+    }
+    > div.job-description-content {
+      display: grid;
+      align-items: center;
+      > div.job-description-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2px;
+        > p.company-name {
+          color: var(--color-de-saturated-dark-cyan);
+          font-weight: 700;
+        }
+        > div.relevant-tags-wrapper {
+          margin-left: 4px;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          > span.relevant-tag {
+            font-size: 10px;
+            font-weight: 700;
+            color: white;
+            padding: 6px;
+            border-radius: 100px;
+            background-color: var(--color-very-dark-gray-cyan);
+          }
+        }
+      }
+      > h2.company-job-title {
+        color: var(--color-very-dark-gray-cyan);
+        font-weight: 700;
+        font-size: 20px;
+      }
+      > div.job-description-footer {
+        margin-top: 6px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        > p.company-job-update-duration {
+          color: var(--color-dark-gray-cyan);
+          font-size: 14px;
+        }
+        > p.job-type {
+          color: var(--color-dark-gray-cyan);
+          font-size: 14px;
+        }
+        > p.job-location {
+          color: var(--color-dark-gray-cyan);
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  > div.job-tags-wrapper {
+    overflow: hidden;
+    box-sizing: border-box;
+    float: right;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    > span.job-skill-tag {
+      color: var(--color-de-saturated-dark-cyan);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 6px;
+      background-color: var(--color-light-gray-cyan-bg);
+    }
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  div.JobDetailsCard {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 1.8em;
+  display: grid;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 2px 6px 14px hsla(180, 29%, 50%, 0.300);
+  align-items: center;
+  > div.job-description-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    // grid-template-columns: auto;
+    align-items: center;
+    > img.company-logo-image {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    > div.job-description-content {
+      display: grid;
+      align-items: center;
+      margin-right: auto;
+      margin-left: auto;
+      > div.job-description-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2px;
+        margin-right: auto;
+        margin-left: auto;
+        > p.company-name {
+          color: var(--color-de-saturated-dark-cyan);
+          font-weight: 700;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        > div.relevant-tags-wrapper {
+          margin-left: 4px;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          > span.relevant-tag {
+            font-size: 10px;
+            font-weight: 700;
+            color: white;
+            padding: 6px;
+            border-radius: 100px;
+            background-color: var(--color-very-dark-gray-cyan);
+          }
+        }
+      }
+      > h2.company-job-title {
+        color: var(--color-very-dark-gray-cyan);
+        font-weight: 700;
+        font-size: 20px;
+      }
+      > div.job-description-footer {
+        margin-top: 6px;
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        gap: 10px;
+        > p.company-job-update-duration {
+          color: var(--color-dark-gray-cyan);
+          font-size: 14px;
+        }
+        > p.job-type {
+          color: var(--color-dark-gray-cyan);
+          font-size: 14px;
+        }
+        > p.job-location {
+          color: var(--color-dark-gray-cyan);
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  > div.job-tags-wrapper {
+    border-top: 0.3px solid gray;
+    padding: 1.2em;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    gap: 6px;
+    > span.job-skill-tag {
+      color: var(--color-de-saturated-dark-cyan);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 6px;
+      background-color: var(--color-light-gray-cyan-bg);
+    }
+  }
+}
+}
