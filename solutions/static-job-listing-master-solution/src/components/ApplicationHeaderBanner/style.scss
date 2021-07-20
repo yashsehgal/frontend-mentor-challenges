@@ -1,0 +1,12 @@
+@import url('../../styles/styles.css');
+
+div.ApplicationHeaderBanner {
+  background-color: var(--color-de-saturated-dark-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > img.application-header-banner {
+    width: 100%;
+    height: 100%;
+  }
+}

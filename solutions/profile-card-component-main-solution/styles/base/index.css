@@ -1,0 +1,105 @@
+body {
+  background-color: var(--color-dark-cyan);
+  font-family: var(--font-k-sans);
+}
+
+div.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.container > div.profile-card-container {
+  display: -ms-grid;
+  display: grid;
+  border-radius: 16px;
+  width: 360px;
+  overflow: hidden;
+}
+
+div.container > div.profile-card-container > img.card-banner-image {
+  width: 100%;
+}
+
+div.container > div.profile-card-container > div.card-content-container {
+  background-color: white;
+}
+
+div.container > div.profile-card-container > div.card-content-container > img.profile-image {
+  border-radius: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 5px solid white;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+div.container > div.profile-card-container > div.card-content-container > div.profile-details-container > span {
+  margin-top: -24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.container > div.profile-card-container > div.card-content-container > div.profile-details-container > span > h3 {
+  color: var(--color-dark-blue);
+  font-weight: 700;
+}
+
+div.container > div.profile-card-container > div.card-content-container > div.profile-details-container > span > p {
+  color: var(--color-dark-gray);
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+div.container > div.profile-card-container > div.card-content-container > div.profile-details-container > p.location {
+  color: var(--color-dark-gray);
+  margin-top: 18px;
+  text-align: center;
+  font-size: 18px;
+}
+
+div.container > div.profile-card-container > div.card-content-container > div.profile-card-footer {
+  margin-top: 24px;
+  border-top: 0.3px solid #d6d6d6;
+  padding: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.container > div.profile-card-container > div.card-content-container > div.profile-card-footer > div.profile-stats-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div.container > div.profile-card-container > div.card-content-container > div.profile-card-footer > div.profile-stats-wrapper > h3.profile-stats {
+  color: var(--color-dark-blue);
+  text-align: center;
+}
+
+div.container > div.profile-card-container > div.card-content-container > div.profile-card-footer > div.profile-stats-wrapper > p.profile-stats-label {
+  color: var(--color-dark-gray);
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

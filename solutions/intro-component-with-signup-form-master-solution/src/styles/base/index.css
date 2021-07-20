@@ -1,0 +1,237 @@
+body {
+  background-color: var(--color-red);
+  background-image: url("../../assets/bg-intro-desktop.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: var(--font-family);
+}
+
+div.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+div.App > div.intro-content-wrapper > h1.intro-tagline {
+  color: white;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 48px;
+}
+
+div.App > div.intro-content-wrapper > p.intro-content {
+  margin-top: 16px;
+  color: white;
+  font-weight: 400;
+  max-width: 56ch;
+  line-height: 1.6;
+}
+
+div.App > div.signup-form-wrapper > div.offer-notifier {
+  padding: 1.2em;
+  padding-right: 6em;
+  padding-left: 6em;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--color-blue);
+  border-radius: 8px;
+  -webkit-box-shadow: -2px 8px rgba(0, 0, 0, 0.225);
+          box-shadow: -2px 8px rgba(0, 0, 0, 0.225);
+}
+
+div.App > div.signup-form-wrapper > div.offer-notifier > p.offer-notifier-content {
+  color: white;
+}
+
+div.App > div.signup-form-wrapper > form.signup-form {
+  margin-top: 1.8em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2em;
+  padding: 1.8em;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: -2px 8px rgba(0, 0, 0, 0.225);
+          box-shadow: -2px 8px rgba(0, 0, 0, 0.225);
+}
+
+div.App > div.signup-form-wrapper > form.signup-form > input.signup-user-input {
+  padding: 1.2em;
+  border: 1px solid var(--color-grayish-blue);
+  border-radius: 8px;
+  color: var(--color-dark-blue);
+  font-family: inherit;
+  font-weight: 600;
+}
+
+div.App > div.signup-form-wrapper > form.signup-form > input.signup-user-input:focus {
+  outline: none !important;
+  border: 1.2px solid var(--color-dark-blue);
+}
+
+div.App > div.signup-form-wrapper > form.signup-form > button.button {
+  padding: 1em;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  background-color: var(--color-green);
+  color: white;
+  font-size: 16px;
+  -webkit-box-shadow: -2px 4px rgba(0, 129, 65, 0.534);
+          box-shadow: -2px 4px rgba(0, 129, 65, 0.534);
+}
+
+div.App > div.signup-form-wrapper > form.signup-form > span.info-text {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-grayish-blue);
+}
+
+div.App > div.signup-form-wrapper > form.signup-form > span.info-text > span.red-text {
+  color: var(--color-red);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1225px) {
+  body {
+    background-color: var(--color-red);
+    background-image: url("../../assets/bg-intro-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--font-family);
+  }
+  div.App {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: block;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  div.App > div.intro-content-wrapper > h1.intro-tagline {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+  }
+  div.App > div.intro-content-wrapper > p.intro-content {
+    text-align: center;
+    margin-top: 16px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 56ch;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  div.App > div.signup-form-wrapper {
+    margin-top: 3em;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.App > div.signup-form-wrapper > div.offer-notifier {
+    padding: 0.8em;
+    padding-right: 4em;
+    padding-left: 4em;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--color-blue);
+    border-radius: 8px;
+    -webkit-box-shadow: -2px 8px rgba(0, 0, 0, 0.225);
+            box-shadow: -2px 8px rgba(0, 0, 0, 0.225);
+  }
+  div.App > div.signup-form-wrapper > div.offer-notifier > p.offer-notifier-content {
+    color: white;
+    font-size: 14px;
+  }
+  div.App > div.signup-form-wrapper > form.signup-form {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    margin-top: 1.8em;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.2em;
+    padding: 1.8em;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: -2px 8px rgba(0, 0, 0, 0.225);
+            box-shadow: -2px 8px rgba(0, 0, 0, 0.225);
+  }
+  div.App > div.signup-form-wrapper > form.signup-form > input.signup-user-input {
+    padding: 1.2em;
+    border: 1px solid var(--color-grayish-blue);
+    border-radius: 8px;
+    color: var(--color-dark-blue);
+    font-family: inherit;
+    font-weight: 600;
+  }
+  div.App > div.signup-form-wrapper > form.signup-form > input.signup-user-input:focus {
+    outline: none !important;
+    border: 1.2px solid var(--color-dark-blue);
+  }
+  div.App > div.signup-form-wrapper > form.signup-form > button.button {
+    padding: 1em;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: 500;
+    background-color: var(--color-green);
+    color: white;
+    font-size: 16px;
+    -webkit-box-shadow: -2px 4px rgba(0, 129, 65, 0.534);
+            box-shadow: -2px 4px rgba(0, 129, 65, 0.534);
+  }
+  div.App > div.signup-form-wrapper > form.signup-form > span.info-text {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--color-grayish-blue);
+  }
+  div.App > div.signup-form-wrapper > form.signup-form > span.info-text > span.red-text {
+    color: var(--color-red);
+    font-weight: 700;
+  }
+}
+/*# sourceMappingURL=index.css.map */
