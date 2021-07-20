@@ -1,0 +1,23 @@
+{
+  "name": "frontend-mentor-challenges",
+  "version": "1.0.0",
+  "description": "This repository has sub-projects for the frontend mentor.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashsehgal/frontend-mentor-challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashsehgal/frontend-mentor-challenges/issues"
+  },
+  "homepage": "https://github.com/yashsehgal/frontend-mentor-challenges#readme",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "nodemon": "^2.0.12"
+  }
+}
