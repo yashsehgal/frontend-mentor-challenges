@@ -1,0 +1,38 @@
+body {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: var(--desktop-view);
+  background-color: var(--color-db-main);
+}
+
+div.header {
+  padding-top: 3em;
+  padding-bottom: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.header > img.header-logo {
+  float: left;
+}
+
+div.header > div.header-options-wrapper {
+  margin-left: auto;
+}
+
+div.header > div.header-options-wrapper > ul.header-options-list {
+  list-style: none;
+  color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 28px;
+}
+/*# sourceMappingURL=index.css.map */

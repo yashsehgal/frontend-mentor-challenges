@@ -1,0 +1,26 @@
+body {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: var(--desktop-view);
+  background-color: var(--color-db-main);
+}
+
+div.header {
+  padding-top: 3em;
+  padding-bottom: 1.2em;
+  display: flex;
+  align-items: center;
+  > img.header-logo { 
+    float: left;
+  }
+  > div.header-options-wrapper {
+    margin-left: auto;
+    > ul.header-options-list {
+      list-style: none;
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+  }
+}

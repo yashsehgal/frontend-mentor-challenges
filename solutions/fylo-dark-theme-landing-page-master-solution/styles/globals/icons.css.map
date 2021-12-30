@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,OAAO,CAAC,iFAAI",
+    "sources": [
+        "icons.scss"
+    ],
+    "names": [],
+    "file": "icons.css"
+}
