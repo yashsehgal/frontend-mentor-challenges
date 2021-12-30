@@ -1,0 +1,38 @@
+div.card {
+  width: 500px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  overflow: hidden;
+  padding: 4em;
+  border-radius: 24px;
+  border: 0.2px solid var(--light-gray);
+}
+
+div.card > div.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.card > div.card-header > div.card-header__user-profile-image-wrapper > img.user-profile-image {
+  border-radius: 50%;
+}
+
+div.card > div.card-header > div.card-header__user-details-wrapper > h3.user-details__username {
+  color: inherit;
+  font-family: inherit;
+}
+
+div.card > div.card-header > div.card-header__user-details-wrapper > p.user-details__user-account-type {
+  opacity: 50%;
+}
+
+div.card > div.card-body-content > h2.card-body-content__testimonial-title {
+  margin-top: 0.4em;
+  margin-bottom: 0.8em;
+}
+/*# sourceMappingURL=card.component.style.css.map */

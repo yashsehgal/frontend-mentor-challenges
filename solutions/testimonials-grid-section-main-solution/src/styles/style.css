@@ -1,0 +1,6 @@
+@import url("./globals/index.css");
+body {
+  background-color: var(--light-grayish-blue);
+  font-family: var(--font-bsc);
+}
+/*# sourceMappingURL=style.css.map */

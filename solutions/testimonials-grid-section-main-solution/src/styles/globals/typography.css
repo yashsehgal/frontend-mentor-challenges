@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  --font-bsc: 'Barlow Semi Condensed';
+}
+
+.font-bsc {
+  font-family: var(--font-bsc);
+}
+/*# sourceMappingURL=typography.css.map */

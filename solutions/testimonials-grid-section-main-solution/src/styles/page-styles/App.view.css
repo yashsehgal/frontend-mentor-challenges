@@ -1,0 +1,29 @@
+div.App {
+  background-color: var(--light-grayish-blue);
+  margin: auto;
+  max-width: 1300px;
+}
+
+div.App > div.testimonials-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+div.App > div.testimonials-wrapper > div.testimonial-wrapper__container-01 > div.testimonial-wrapper__top-layer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+div.App > div.testimonials-wrapper > div.testimonial-wrapper__container-01 > div.testimonial-wrapper__bottom-layer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+/*# sourceMappingURL=App.view.css.map */
